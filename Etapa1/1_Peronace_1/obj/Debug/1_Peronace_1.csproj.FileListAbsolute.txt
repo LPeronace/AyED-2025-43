@@ -1,0 +1,5 @@
+C:\Users\alumno\Desktop\Etapa 1\1_Peronace_1\bin\Debug\1_Peronace_1.exe.config
+C:\Users\alumno\Desktop\Etapa 1\1_Peronace_1\bin\Debug\1_Peronace_1.exe
+C:\Users\alumno\Desktop\Etapa 1\1_Peronace_1\bin\Debug\1_Peronace_1.pdb
+C:\Users\alumno\Desktop\Etapa 1\1_Peronace_1\obj\Debug\1_Peronace_1.exe
+C:\Users\alumno\Desktop\Etapa 1\1_Peronace_1\obj\Debug\1_Peronace_1.pdb
