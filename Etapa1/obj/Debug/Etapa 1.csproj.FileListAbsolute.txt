@@ -1,0 +1,6 @@
+C:\Users\alumno\Desktop\Etapa 1\bin\Debug\Etapa 1.exe.config
+C:\Users\alumno\Desktop\Etapa 1\obj\Debug\Etapa 1.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Desktop\Etapa 1\bin\Debug\Etapa 1.exe
+C:\Users\alumno\Desktop\Etapa 1\bin\Debug\Etapa 1.pdb
+C:\Users\alumno\Desktop\Etapa 1\obj\Debug\Etapa 1.exe
+C:\Users\alumno\Desktop\Etapa 1\obj\Debug\Etapa 1.pdb
