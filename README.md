@@ -2,4 +2,4 @@
 **Curso:** 4to 3ra
 **Máquina asignada:** 1
 **Integrantes:**
-- Peronace
+-Lautaro Peronace
