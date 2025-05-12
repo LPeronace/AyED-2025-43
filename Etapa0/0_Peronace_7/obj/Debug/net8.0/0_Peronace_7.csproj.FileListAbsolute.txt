@@ -1,0 +1,14 @@
+C:\Users\lauta\OneDrive\Desktop\AyED-2025\Etapa 0\0_Peronace_7\bin\Debug\net8.0\0_Peronace_7.exe
+C:\Users\lauta\OneDrive\Desktop\AyED-2025\Etapa 0\0_Peronace_7\bin\Debug\net8.0\0_Peronace_7.deps.json
+C:\Users\lauta\OneDrive\Desktop\AyED-2025\Etapa 0\0_Peronace_7\bin\Debug\net8.0\0_Peronace_7.runtimeconfig.json
+C:\Users\lauta\OneDrive\Desktop\AyED-2025\Etapa 0\0_Peronace_7\bin\Debug\net8.0\0_Peronace_7.dll
+C:\Users\lauta\OneDrive\Desktop\AyED-2025\Etapa 0\0_Peronace_7\bin\Debug\net8.0\0_Peronace_7.pdb
+C:\Users\lauta\OneDrive\Desktop\AyED-2025\Etapa 0\0_Peronace_7\obj\Debug\net8.0\0_Peronace_7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lauta\OneDrive\Desktop\AyED-2025\Etapa 0\0_Peronace_7\obj\Debug\net8.0\0_Peronace_7.AssemblyInfoInputs.cache
+C:\Users\lauta\OneDrive\Desktop\AyED-2025\Etapa 0\0_Peronace_7\obj\Debug\net8.0\0_Peronace_7.AssemblyInfo.cs
+C:\Users\lauta\OneDrive\Desktop\AyED-2025\Etapa 0\0_Peronace_7\obj\Debug\net8.0\0_Peronace_7.csproj.CoreCompileInputs.cache
+C:\Users\lauta\OneDrive\Desktop\AyED-2025\Etapa 0\0_Peronace_7\obj\Debug\net8.0\0_Peronace_7.dll
+C:\Users\lauta\OneDrive\Desktop\AyED-2025\Etapa 0\0_Peronace_7\obj\Debug\net8.0\refint\0_Peronace_7.dll
+C:\Users\lauta\OneDrive\Desktop\AyED-2025\Etapa 0\0_Peronace_7\obj\Debug\net8.0\0_Peronace_7.pdb
+C:\Users\lauta\OneDrive\Desktop\AyED-2025\Etapa 0\0_Peronace_7\obj\Debug\net8.0\0_Peronace_7.genruntimeconfig.cache
+C:\Users\lauta\OneDrive\Desktop\AyED-2025\Etapa 0\0_Peronace_7\obj\Debug\net8.0\ref\0_Peronace_7.dll
