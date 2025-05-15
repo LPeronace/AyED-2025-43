@@ -1,5 +1,0 @@
-C:\Users\alumno\Desktop\Etapa1\1_Peronace_10\bin\Debug\1_Peronace_10.exe.config
-C:\Users\alumno\Desktop\Etapa1\1_Peronace_10\bin\Debug\1_Peronace_10.exe
-C:\Users\alumno\Desktop\Etapa1\1_Peronace_10\bin\Debug\1_Peronace_10.pdb
-C:\Users\alumno\Desktop\Etapa1\1_Peronace_10\obj\Debug\1_Peronace_10.exe
-C:\Users\alumno\Desktop\Etapa1\1_Peronace_10\obj\Debug\1_Peronace_10.pdb
