@@ -1,0 +1,6 @@
+C:\Users\alumno\Desktop\Etapa 2\2_Peronace_0\bin\Debug\2_Peronace_0.exe.config
+C:\Users\alumno\Desktop\Etapa 2\2_Peronace_0\bin\Debug\2_Peronace_0.exe
+C:\Users\alumno\Desktop\Etapa 2\2_Peronace_0\bin\Debug\2_Peronace_0.pdb
+C:\Users\alumno\Desktop\Etapa 2\2_Peronace_0\obj\Debug\2_Peronace_0.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Desktop\Etapa 2\2_Peronace_0\obj\Debug\2_Peronace_0.exe
+C:\Users\alumno\Desktop\Etapa 2\2_Peronace_0\obj\Debug\2_Peronace_0.pdb
