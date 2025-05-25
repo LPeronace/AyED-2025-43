@@ -11,19 +11,34 @@ namespace _2_Peronace_3
         static void Main(string[] args)
         {
             Console.WriteLine("Cuantos participantes hay?");
-            int[] personas =new int[int.Parse(Console.ReadLine())];
+            int[] personas = new int[int.Parse(Console.ReadLine())];
             int[] puntaje = new int[personas.Count()];
-            int[] ordenado = new int[personas.Count()];
+
+
             for (int i = 0; i < personas.Count(); i++)
             {
                 Console.WriteLine("Cuanto puntaje hizo el participante numero " + (i + 1) + " ?");
                 puntaje[i] = int.Parse(Console.ReadLine());
             }
 
-            for(int a = 0; a < personas.Count(); a++)
+            for (int i = 0; i < puntaje.Length - 1; i++)
             {
-                int residuo = 0;
-                if()
+                for (int j = 0; j < puntaje.Length - i - 1; j++)
+                {
+                    if (puntaje[j] < puntaje[j + 1])
+                    {
+                        // Intercambio de valores
+                        int residuo = puntaje[j];
+                        puntaje[j] = puntaje[j + 1];
+                        puntaje[j + 1] = residuo;
+                    }
+                }
+
+            }
+
+            for (int i = 0; i < puntaje.Length; i++)
+            {
+                Console.WriteLine("El puesto " + (i + 1) + " tuvo un puntaje de: " + puntaje[i]);
             }
 
             Console.ReadKey();
