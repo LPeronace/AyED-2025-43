@@ -25,9 +25,9 @@ namespace _2_Peronace_3
             {
                 for (int j = 0; j < puntaje.Length - i - 1; j++)
                 {
+                    
                     if (puntaje[j] < puntaje[j + 1])
                     {
-                        // Intercambio de valores
                         int residuo = puntaje[j];
                         puntaje[j] = puntaje[j + 1];
                         puntaje[j + 1] = residuo;
