@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.PortableExecutable;
@@ -36,7 +36,8 @@ namespace _2_Peronace_14
                         pochidex[encontrado, nombre] = Console.ReadLine();
 
                         Console.Write("Y el tipo?(A = Agua, F = Fuego y P = Planta):");
-                        pochidex[encontrado, tipo] = Console.ReadLine();
+                        if (Console.ReadLine())
+                        pochidex[encontrado, tipo] = (Console.ReadLine()).ToUpper();
 
                         Console.Write("Y el nivel?:");
                         pochidex[encontrado, nivel] = (int.Parse(Console.ReadLine())).ToString(); ;
@@ -85,14 +86,38 @@ namespace _2_Peronace_14
                         int niv = int.Parse(pochidex[(fila-1), nivel]);
                         
                         pochidex[(fila - 1), nivel] = (niv + random.Next(1,3)).ToString();
-                        
-                        Console.WriteLine(pochidex[(fila-1), nivel]);
-                        
-                        Console.ReadLine();
                         break;
+
                     case 4:
+                        Console.WriteLine("Pochimons En Investigacion:");
+                        Console.WriteLine("| Fila |     Nombre   |  Tipo | Nivel | Estado | Investigador Asignado|");
+                        Console.WriteLine("| |------|------------|-------|-------|--------|-----------------------|");
+                        for (int i = 0; i < encontrado; i++)
+                        {
+                            for (int j = 0; j < encontrado; j++)
+                            {
+                                if (pochidex[i,estado] == "1")
+                                {
+                                    Console.WriteLine("|" + (i + 1) + "\t" + "|" + pochidex[i, nombre] + "\t" + "\t" + "|" + pochidex[i, tipo] + "\t" + "|" + pochidex[i, nivel] + "\t" + "|" + pochidex[i, estado] + "\t" + "|" + pochidex[i, investigador]);
+                                }
+                            }
+                        }
+
+                        Console.WriteLine("Decime el numero de fila el cual queres marcar como investigado:");
+                        fila = int.Parse(Console.ReadLine());
+
+                        pochidex[(fila - 1), estado] = "2";
                         break;
                     case 5:
+                        Console.WriteLine("| Fila |     Nombre   |  Tipo | Nivel | Estado | Investigador Asignado|");
+                        Console.WriteLine("| |------|------------|-------|-------|--------|-----------------------|");
+                        for (int i = 0; i < encontrado; i++)
+                        {
+                            for (int j = 0; j < encontrado; j++)
+                            {
+                                Console.WriteLine("|" + (i + 1) + "\t" + "|" + pochidex[i, nombre] + "\t" + "\t" + "|" + pochidex[i, tipo] + "\t" + "|" + pochidex[i, nivel] + "\t" + "|" + pochidex[i, estado] + "\t" + "|" + pochidex[i, investigador]);
+                            }
+                        }
                         break;
                     case 6:
                         break;
@@ -107,14 +132,11 @@ namespace _2_Peronace_14
                     default:Console.WriteLine("Error");
                         break;
                 }
+                Console.WriteLine("Presione una tecla para seguir");
+                Console.ReadKey();
                 Console.Clear();
             } while (!salir);
             Console.ReadKey();
         }
     }
 }
-
-
-
-
-
