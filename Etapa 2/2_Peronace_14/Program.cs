@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Linq;
-using System.Reflection.PortableExecutable;
+//using System.Reflection.PortableExecutable;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+//using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace _2_Peronace_14
 {
@@ -14,7 +14,7 @@ namespace _2_Peronace_14
     {
         static void Main(string[] args)
         {
-            string[,] pochidex = new string[75,5];
+            string[,] pochidex = new string[75, 5];
             bool salir = false, checkeo = false;
             int encontrado = 0;
             int nombre = 0;
@@ -22,17 +22,17 @@ namespace _2_Peronace_14
             int nivel = 2;
             int estado = 3;
             int investigador = 4;
-            string idi;
+            int idi;
             Random random = new Random();
             do
             {
-                Console.WriteLine("Bienvenido a la pochidex, que queres hacer?" + "\n" + "Cantidad encontrada:"+(encontrado) +"/75"  +"\n" +"1 para registrar Pochimon" + "\n" + "2 para Asignar Investigador A Pochimon" + "\n" + "3 para actualizar nivel de Pochimon" + "\n" + "4 para marcar Pochimon como investigado" + "\n" + "5 para mostrar informacion de Pochimons" + "\n" + "6 para buscar Pochimons por Tipo" + "\n" + "7 para mostrar Pochimon por investigador" + "\n" + "8 para mostrar Pochimons picados" + "\n" + "9 para salir de la pochidex");
-                int opcion = int.Parse(Console.ReadLine());
+                Console.WriteLine("Bienvenido a la pochidex, que queres hacer?" + "\n" + "Cantidad encontrada:" + (encontrado) + "/75" + "\n" + "1 para registrar Pochimon" + "\n" + "2 para Asignar Investigador A Pochimon" + "\n" + "3 para actualizar nivel de Pochimon" + "\n" + "4 para marcar Pochimon como investigado" + "\n" + "5 para mostrar informacion de Pochimons" + "\n" + "6 para buscar Pochimons por Tipo" + "\n" + "7 para mostrar Pochimon por investigador" + "\n" + "8 para mostrar Pochimons picados" + "\n" + "9 para salir de la pochidex");
+                string opcion = Console.ReadLine();
                 Random rand = new Random();
 
                 switch (opcion)
                 {
-                    case 1:
+                    case "1":
                         Console.Write("Y cual es el nombre?:");
                         pochidex[encontrado, nombre] = Console.ReadLine();
 
@@ -61,7 +61,7 @@ namespace _2_Peronace_14
 
                         encontrado += 1;
                         break;
-                    case 2:
+                    case "2":
                         for (int i = 0; i < 75; i++)
                         {
                             if (pochidex[i, estado] == "0")
@@ -77,21 +77,21 @@ namespace _2_Peronace_14
                         do
                         {
                             Console.Write("Cual es tu codigo de investigador?:");
-                            idi = Console.ReadLine();
-                            if (idi == "")
+                            idi = int.Parse(Console.ReadLine());
+                            if (idi.ToString().Trim() == "")
                             {
                                 Console.WriteLine("Codigo invalido, intente denuevo");
                                 checkeo = false;
                             }
                             else
                             {
-                                pochidex[(fila - 1), investigador] = idi;
+                                pochidex[(fila - 1), investigador] = idi.ToString();
                                 checkeo = true;
                             }
                         } while (!checkeo);
                         break;
 
-                    case 3:
+                    case "3":
                         Console.WriteLine("Pochimons registrados:");
                         Console.WriteLine("| ID |     Nombre   |  Nivel |");
                         Console.WriteLine("| ------| ------------| -------|");
@@ -105,10 +105,10 @@ namespace _2_Peronace_14
                         int niv = int.Parse(pochidex[(fila - 1), nivel]);
 
                         pochidex[(fila - 1), nivel] = (niv + random.Next(1, 3)).ToString();
-                        Console.WriteLine("El nuevo nivel del Pochimon es... " + pochidex[fila - 1,nivel]+"!!!");
+                        Console.WriteLine("El nuevo nivel del Pochimon es... " + pochidex[fila - 1, nivel] + "!!!");
                         break;
 
-                    case 4:
+                    case "4":
                         Console.WriteLine("Pochimons En Investigacion:");
                         Console.WriteLine("| ID |     Nombre   |  Tipo | Nivel | Estado | Investigador Asignado|");
                         Console.WriteLine("| |------|------------|-------|-------|--------|-----------------------|");
@@ -128,9 +128,9 @@ namespace _2_Peronace_14
 
                         pochidex[(fila - 1), estado] = "2";
                         break;
-                    case 5:
+                    case "5":
                         Console.WriteLine("| ID |     Nombre   |  Tipo | Nivel | Estado | Investigador Asignado|");
-                        Console.WriteLine("| |------|------------|-------|-------|--------|-----------------------|");
+                        Console.WriteLine("|------|------------|-------|-------|--------|-----------------------|");
                         for (int i = 0; i < encontrado; i++)
                         {
                             for (int j = 0; j < encontrado; j++)
@@ -139,14 +139,26 @@ namespace _2_Peronace_14
                             }
                         }
                         break;
-                    case 6:
-                        //int u = 0; tenia pensado un contador para que le sume 1 por cada fila que no encontro de ese tipo, y si no encuentra ninguno,
-                        //con un if lo comparo con encontrados y de ahi podria filtrar que si no hay ninguno no me lo escriba 
+                    case "6":
                         Console.Write("Que tipo de pochimon queres buscar? (A/F/P):");
                         string buscado = (Console.ReadLine()).ToUpper();
 
+                        do
+                        {
+                            if (buscado == "A" || buscado == "F" || buscado == "P")
+                            {
+                                checkeo = true;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Error, no es un tipo válido, intente devuelta");
+                                buscado = Console.ReadLine();
+                                checkeo = false;
+                            }
+
+                        } while (!checkeo);
                         Console.WriteLine("| ID |     Nombre   |  Tipo | Nivel | Estado | Investigador Asignado|");
-                        Console.WriteLine("| |------|------------|-------|-------|--------|-----------------------|");
+                        Console.WriteLine("|------|------------|-------|-------|--------|-----------------------|");
                         for (int i = 0; i < encontrado; i++)
                         {
                             if (buscado == pochidex[i, tipo])
@@ -156,13 +168,18 @@ namespace _2_Peronace_14
                         }
 
                         break;
-                    case 7:
+                    case "7":
+                        do
+                        {
+                            checkeo = false;
+
+                        } while (!checkeo);
                         Console.Write("Decime cual es tu codigo de investigador:");
                         string idibuscado = Console.ReadLine();
                         Console.WriteLine("Todos los pochimones asignados al numero de investigador:" + idibuscado);
                         Console.WriteLine("| ID |     Nombre   |  Tipo | Nivel | Estado | Investigador Asignado|");
-                        Console.WriteLine("| |------|------------|-------|-------|--------|-----------------------|");
-                        
+                        Console.WriteLine("|------|------------|-------|-------|--------|-----------------------|");
+
                         for (int i = 0; i < encontrado; i++)
                         {
                             for (int j = 0; j < encontrado; j++)
@@ -173,38 +190,47 @@ namespace _2_Peronace_14
 
 
                         break;
-                    case 8:
+                    case "8":
                         Console.WriteLine("Todos los pochimones que tienen un nivel mayor a 30 son:");
 
                         Console.WriteLine("| ID |     Nombre   |  Tipo | Nivel |");
-                        Console.WriteLine("| |------|------------|-------|-------|");
+                        Console.WriteLine("|------|------------|-------|-------|");
                         for (int i = 0; i < encontrado; i++)
                         {
-                            if (int.Parse(pochidex[i,nivel]) > 30)
+                            if (int.Parse(pochidex[i, nivel]) > 30)
                             {
                                 Console.WriteLine("|" + (i + 1) + "\t" + "|" + pochidex[i, nombre] + "\t" + "|" + pochidex[i, tipo] + "\t" + "|" + pochidex[i, nivel] + "\t");
                             }
                         }
                         break;
-                    case 9:
+                    case "9":
                         Console.WriteLine("Chauu");
                         salir = true;
                         break;
-                    default:Console.WriteLine("Error");
+                    default:
+                        Console.WriteLine("Error");
                         break;
                 }
-                if (opcion != 9)
+                if (opcion != "9")
                 {
                     Console.WriteLine("Presione una tecla para seguir");
                     Console.ReadKey();
                 }
+                do
+                {
+                    if (opcion.Trim() == "")
+                    {
+                        Console.WriteLine("Intentelo devuelta");
+                        opcion = Console.ReadLine();
+                        checkeo = false;
+                    }
+                    else
+                    {
+                        checkeo = true;
+                    }
+                } while (!checkeo);
                 Console.Clear();
             } while (!salir);
         }
     }
 }
-
-
-
-
-
