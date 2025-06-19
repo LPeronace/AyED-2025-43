@@ -23,6 +23,7 @@ namespace _2_Peronace_14
             int estado = 3;
             int investigador = 4;
             int idi;
+            int k;
             Random random = new Random();
             do
             {
@@ -53,7 +54,21 @@ namespace _2_Peronace_14
                         } while (!checkeo);
 
                         Console.Write("Y el nivel?:");
-                        pochidex[encontrado, nivel] = (int.Parse(Console.ReadLine())).ToString(); ;
+                        string n = Console.ReadLine();
+                        do
+                        {
+                            if (int.TryParse(n, out k))
+                            {
+                                pochidex[encontrado, nivel] = n;
+                                checkeo = true;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Error, intentelo devuelta");
+                                n = Console.ReadLine();
+                                checkeo = false;
+                            }
+                        } while (!checkeo);
 
                         pochidex[encontrado, estado] = "0";
 
@@ -71,6 +86,7 @@ namespace _2_Peronace_14
                         }
                         Console.Write("Cual queres investigar?, Decime el numero de id:");
                         int fila = int.Parse(Console.ReadLine());
+                        
 
                         pochidex[(fila - 1), estado] = "1";
 
