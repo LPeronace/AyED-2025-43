@@ -1,0 +1,6 @@
+C:\Users\alumno\Desktop\3_Peronace_3\bin\Debug\3_Peronace_3.exe.config
+C:\Users\alumno\Desktop\3_Peronace_3\bin\Debug\3_Peronace_3.exe
+C:\Users\alumno\Desktop\3_Peronace_3\bin\Debug\3_Peronace_3.pdb
+C:\Users\alumno\Desktop\3_Peronace_3\obj\Debug\3_Peronace_3.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Desktop\3_Peronace_3\obj\Debug\3_Peronace_3.exe
+C:\Users\alumno\Desktop\3_Peronace_3\obj\Debug\3_Peronace_3.pdb
