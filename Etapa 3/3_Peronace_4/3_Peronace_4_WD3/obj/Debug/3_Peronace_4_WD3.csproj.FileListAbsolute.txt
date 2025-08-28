@@ -1,0 +1,6 @@
+C:\Users\alumno\Desktop\3_Peronace_4_WD3\bin\Debug\3_Peronace_4_WD3.exe.config
+C:\Users\alumno\Desktop\3_Peronace_4_WD3\bin\Debug\3_Peronace_4_WD3.exe
+C:\Users\alumno\Desktop\3_Peronace_4_WD3\bin\Debug\3_Peronace_4_WD3.pdb
+C:\Users\alumno\Desktop\3_Peronace_4_WD3\obj\Debug\3_Peronace_4_WD3.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Desktop\3_Peronace_4_WD3\obj\Debug\3_Peronace_4_WD3.exe
+C:\Users\alumno\Desktop\3_Peronace_4_WD3\obj\Debug\3_Peronace_4_WD3.pdb
