@@ -4,3 +4,11 @@ C:\Users\alumno\Desktop\3_Peronace_4_WD3\bin\Debug\3_Peronace_4_WD3.pdb
 C:\Users\alumno\Desktop\3_Peronace_4_WD3\obj\Debug\3_Peronace_4_WD3.csprojResolveAssemblyReference.cache
 C:\Users\alumno\Desktop\3_Peronace_4_WD3\obj\Debug\3_Peronace_4_WD3.exe
 C:\Users\alumno\Desktop\3_Peronace_4_WD3\obj\Debug\3_Peronace_4_WD3.pdb
+C:\Users\lauta\OneDrive\Desktop\AyED-2025\Etapa 3\3_Peronace_4\3_Peronace_4_WD3\bin\Debug\3_Peronace_4_WD3.exe.config
+C:\Users\lauta\OneDrive\Desktop\AyED-2025\Etapa 3\3_Peronace_4\3_Peronace_4_WD3\bin\Debug\3_Peronace_4_WD3.exe
+C:\Users\lauta\OneDrive\Desktop\AyED-2025\Etapa 3\3_Peronace_4\3_Peronace_4_WD3\bin\Debug\3_Peronace_4_WD3.pdb
+C:\Users\lauta\OneDrive\Desktop\AyED-2025\Etapa 3\3_Peronace_4\3_Peronace_4_WD3\obj\Debug\3_Peronace_4_WD3.csproj.AssemblyReference.cache
+C:\Users\lauta\OneDrive\Desktop\AyED-2025\Etapa 3\3_Peronace_4\3_Peronace_4_WD3\obj\Debug\3_Peronace_4_WD3.exe.config
+C:\Users\lauta\OneDrive\Desktop\AyED-2025\Etapa 3\3_Peronace_4\3_Peronace_4_WD3\obj\Debug\3_Peronace_4_WD3.csproj.CoreCompileInputs.cache
+C:\Users\lauta\OneDrive\Desktop\AyED-2025\Etapa 3\3_Peronace_4\3_Peronace_4_WD3\obj\Debug\3_Peronace_4_WD3.exe
+C:\Users\lauta\OneDrive\Desktop\AyED-2025\Etapa 3\3_Peronace_4\3_Peronace_4_WD3\obj\Debug\3_Peronace_4_WD3.pdb
